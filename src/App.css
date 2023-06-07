@@ -1,0 +1,98 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgb(21, 21, 24);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+}
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 99;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  background-color: rgba(23, 4, 87,0.3);
+}
+.modal-main {
+  padding:10px;
+  border-radius: 5px;;
+  width: 90%;
+  max-width: 400px;
+  background-color: rgb(23, 4, 87);
+  height: 60vh;
+  max-height: 300px;
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 25%);
+}
+.close {
+  width: 25px;
+  height:25px;
+  color:white;
+  cursor:pointer;
+  margin-left: auto;
+
+}
+.close:hover{
+  transform: scale(1.05);
+}
+.modalB {
+  position: relative;
+  z-index: 100;
+}
+.show{
+  transform: scale(1);
+}
+ul{
+  list-style: none;
+  padding:0;
+}
+.msg-container{
+display: flex;
+  color:white;
+  gap:30px;
+  
+}
+.msg-ul{
+  text-align: left;
+  color:white;
+
+}
+.msg-ul>*{
+  margin-bottom:40px;
+}
+.msgs-list:hover{
+
+cursor: pointer;
+background-color: rgb(212, 225, 235)
+}
+.msgs-list{
+  background-color: rgb(231, 244, 255);
+}
